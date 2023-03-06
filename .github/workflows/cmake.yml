@@ -19,5 +19,5 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: releases
-        path: ../bin/vs17/msvc-19.35/x86_64/release/
+        path: D:/a/VVCSoftware_VTM_Pkg/VVCSoftware_VTM_Pkg/bin/vs17/msvc-19.34/x86_64/release/
       
