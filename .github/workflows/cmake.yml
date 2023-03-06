@@ -7,15 +7,15 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Visual Studio 2022
+    - name: Install Visual Studio 2019
       uses: microsoft/setup-msbuild@v1.0.2
       with:
-        vs-version: '2022'
+        vs-version: '2019'
     - name: Build with CMake
       run: |
         mkdir build
         cd build
-        cmake .. -G "Visual Studio 17 2022" -A x64
+        cmake .. -G "Visual Studio 16 2019" -A x64
         cmake --build . --config Release
     - name: Releases
       uses: actions/upload-artifact@v3.1.2
